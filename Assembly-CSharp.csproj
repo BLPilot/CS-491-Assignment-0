@@ -57,12 +57,15 @@
     <Compile Include="Assets/SampleScenes/Scripts/SlowMoButton.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/LevelReset.cs" />
+    <Compile Include="Assets/Scripts/Cube Scripts/Main.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/CameraSwitch.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/MenuSceneLoader.cs" />
-    <Compile Include="Assets/Scripts/PhysicAndInput.cs" />
-    <Compile Include="Assets/Scripts/Main.cs" />
+    <Compile Include="Assets/Scripts/Cube Scripts/PhysicAndInput.cs" />
+    <Compile Include="Assets/Scripts/EntityMgr.cs" />
+    <Compile Include="Assets/Scripts/SelectionMgr.cs" />
+    <Compile Include="Assets/Scripts/EntityData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/SampleScenes/Shaders/Skybox-Procedural.shader" />
