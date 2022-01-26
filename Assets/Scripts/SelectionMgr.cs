@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class SelectionMgr : MonoBehaviour
 {
+    public static SelectionMgr inst;
+    private void Awake()
+    {
+        inst = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
