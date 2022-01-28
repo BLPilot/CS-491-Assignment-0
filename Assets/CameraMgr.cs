@@ -22,7 +22,7 @@ public class CameraMgr : MonoBehaviour
     public GameObject pitchNode;
     public GameObject rollNode;
 
-    public float cameraMoveSpeed = 500;
+    public float cameraMoveSpeed = 100;
 
     // Update is called once per frame
     void Update()
@@ -42,6 +42,14 @@ public class CameraMgr : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             yawNode.transform.Translate(Vector3.right * Time.deltaTime * cameraMoveSpeed);
+        }
+        if (Input.GetKey(KeyCode.R))
+        {
+            yawNode.transform.Translate(Vector3.up * Time.deltaTime * cameraMoveSpeed);
+        }
+        if (Input.GetKey(KeyCode.F))
+        {
+            yawNode.transform.Translate(Vector3.down * Time.deltaTime * cameraMoveSpeed);
         }
     }
 }

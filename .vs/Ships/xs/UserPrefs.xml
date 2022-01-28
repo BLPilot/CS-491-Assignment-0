@@ -6,7 +6,7 @@
       <File FileName="Assets/Scripts/EntityMgr.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EntityData.cs" Line="35" Column="9" />
       <File FileName="Assets/ControlMgr.cs" Line="21" Column="34" />
-      <File FileName="Assets/CameraMgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/CameraMgr.cs" Line="29" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

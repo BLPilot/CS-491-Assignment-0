@@ -1063,7 +1063,7 @@ MonoBehaviour:
   yawNode: {fileID: 1755196723}
   pitchNode: {fileID: 750663750}
   rollNode: {fileID: 1396768798}
-  cameraMoveSpeed: 500
+  cameraMoveSpeed: 100
 --- !u!1 &1740742482
 GameObject:
   m_ObjectHideFlags: 0
