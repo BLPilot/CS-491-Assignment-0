@@ -22,6 +22,8 @@ public class EntityData : MonoBehaviour
     public float maxSpeed;
     public float minSpeed;
 
+    public GameObject cameraRig;
+
 
     // Start is called before the first frame update
     void Start()
