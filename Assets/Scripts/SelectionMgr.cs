@@ -43,4 +43,12 @@ public class SelectionMgr : MonoBehaviour
             ent.isSelected = false;
         }
     }
+
+    public void SelectEntity(EntityData ent)
+    {
+        UnSelectAll();
+        selectedEntity = ent;
+        selectedEntity.isSelected = true;
+        selectedEntityIndex = EntityMgr.inst.entities.FindIndex(x => (x == ent));
+    }
 }
