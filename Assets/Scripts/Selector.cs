@@ -14,6 +14,7 @@ public class Selector : MonoBehaviour
 
     public EntityData entity;
     public GameObject selectionCircle;
+    public GameObject pointer;
     
 
     // Update is called once per frame
@@ -22,6 +23,10 @@ public class Selector : MonoBehaviour
         if(entity != null)
         {
             selectionCircle.SetActive(entity.isSelected);
+          
+            pointer.SetActive(entity.isSelected);
+            
+            
         }
  
     }

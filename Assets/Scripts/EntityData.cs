@@ -24,6 +24,12 @@ public class EntityData : MonoBehaviour
 
     public GameObject cameraRig;
 
+    public Vector3 targetLocation = Vector3.zero;
+    public float targetHeading;
+    public bool moveToTarget = false;
+
+    public GameObject pointer;
+
 
     // Start is called before the first frame update
     void Start()

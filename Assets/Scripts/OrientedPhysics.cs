@@ -29,6 +29,12 @@ public class OrientedPhysics : MonoBehaviour
             entity.speed = entity.speed - entity.acceleration * Time.deltaTime;
         }
 
+        if(Vector3.Distance(entity.position, entity.targetLocation) < 50)
+        {
+            entity.speed = 0;
+            entity.desiredSpeed = 0;
+        }
+
         //Clamp speed
         entity.speed = Utilities.Clamp(entity.speed, entity.minSpeed, entity.maxSpeed);
 

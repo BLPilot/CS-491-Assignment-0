@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ShipAI : MonoBehaviour
 {
-    public EntityData entity;
-    private Vector3 targetLocation= Vector3.zero;
+ 
+    
     private Vector3 diff = Vector3.zero;
-    private float targetHeading;
+    public GameObject targetPointer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,15 +19,42 @@ public class ShipAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(1))
+       
+        MovePointer();
+        
+
+        if (Input.GetMouseButtonUp(1) )
         {
             RightClick();
-            MovePos(targetLocation);
+            SelectionMgr.inst.selectedEntity.moveToTarget = true;
+            MovePos(SelectionMgr.inst.selectedEntity.targetLocation);
+
+        }
+       
+    }
+
+
+
+    public void MovePointer()
+    {
+        
+
+        float rayLength = 1000f;
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hit = new RaycastHit();
+
+        
+
+        if (Physics.Raycast(ray, out hit, rayLength))
+        {
+            targetPointer.transform.position = hit.point;
 
         }
     }
 
-    private void RightClick()
+    public void RightClick()
     {
         Debug.Log("Right Click");
 
@@ -36,19 +64,24 @@ public class ShipAI : MonoBehaviour
 
         RaycastHit hit = new RaycastHit();
 
+       
+        SelectionMgr.inst.selectedEntity.pointer.transform.position = targetPointer.transform.position;
+        
+
         if (Physics.Raycast(ray, out hit, rayLength))
         {
             Debug.Log(hit.point);
-            targetLocation = hit.point;
+            SelectionMgr.inst.selectedEntity.targetLocation = hit.point;
         }
-
     }
 
-    private void MovePos(Vector3 tar)
+    public void MovePos(Vector3 tar)
     {
-        Vector3 diff = tar - entity.position;
-        targetHeading= Mathf.Atan2(diff.z, diff.x);
-        entity.desiredHeading = targetHeading;
-        entity.desiredSpeed = entity.maxSpeed;
+        Vector3 diff = tar - SelectionMgr.inst.selectedEntity.position;
+        SelectionMgr.inst.selectedEntity.targetHeading = Utilities.Degrees360((Mathf.Atan2(-diff.z, diff.x) * Mathf.Rad2Deg + 90));
+        SelectionMgr.inst.selectedEntity.desiredHeading = SelectionMgr.inst.selectedEntity.targetHeading;
+        SelectionMgr.inst.selectedEntity.desiredSpeed = SelectionMgr.inst.selectedEntity.maxSpeed;
     }
+
+    
 }
