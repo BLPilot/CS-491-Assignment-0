@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 314045799}
   - component: {fileID: 314045800}
   - component: {fileID: 314045801}
+  - component: {fileID: 314045803}
   - component: {fileID: 314045802}
   m_Layer: 0
   m_Name: TugBoat
@@ -520,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b7cb104c64bf41bca7972cf1ed5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 314045799}
   selectionCircle: {fileID: 1571353}
 --- !u!65 &314045802
 BoxCollider:
@@ -535,6 +536,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 35}
   m_Center: {x: 0, y: 2.5, z: 2}
+--- !u!114 &314045803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314045797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5917ccfdf38374b069dabf86198dc666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entity: {fileID: 314045799}
 --- !u!1 &397624641
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b7cb104c64bf41bca7972cf1ed5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 677232350}
   selectionCircle: {fileID: 1848276790}
 --- !u!65 &677232352
 BoxCollider:
@@ -1779,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b7cb104c64bf41bca7972cf1ed5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 1414836822}
   selectionCircle: {fileID: 109281018}
 --- !u!65 &1414836824
 BoxCollider:
@@ -1881,7 +1895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b7cb104c64bf41bca7972cf1ed5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 1416616895}
   selectionCircle: {fileID: 867875458}
 --- !u!65 &1416616897
 BoxCollider:
@@ -2393,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b7cb104c64bf41bca7972cf1ed5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 1817596539}
   selectionCircle: {fileID: 251925651}
 --- !u!65 &1817596542
 BoxCollider:
@@ -2516,8 +2530,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919131318}
-  m_LocalRotation: {x: -0.38268346, y: 0, z: 0, w: 0.9238795}
-  m_LocalPosition: {x: 200, y: -249.86, z: -300}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 503.42886, y: -783.459, z: 110.643684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

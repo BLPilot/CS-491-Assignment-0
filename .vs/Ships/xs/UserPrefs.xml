@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{DC04ABB5-4684-7E5A-EA55-B32A3926F57E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShipBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShipAI.cs">
     <Files>
       <File FileName="Assets/Scripts/SelectionMgr.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Utilities.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EntityMgr.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EntityData.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CameraMgr.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Selector.cs" Line="51" Column="11" />
-      <File FileName="Assets/Scripts/ControlMgr.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/ShipBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ControlMgr.cs" />
+      <File FileName="Assets/Scripts/OrientedPhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Selector.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/ShipAI.cs" Line="50" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Cube Scripts" expanded="True" />
-                <Node name="ControlMgr.cs" selected="True" />
+                <Node name="ShipAI.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,6 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f03546f2-a657-4f7c-9671-701c4a489208" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
