@@ -33,6 +33,7 @@ public class OrientedPhysics : MonoBehaviour
         {
             entity.speed = 0;
             entity.desiredSpeed = 0;
+            entity.moveToTarget = false;
         }
 
         //Clamp speed

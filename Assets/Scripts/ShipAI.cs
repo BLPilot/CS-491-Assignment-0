@@ -27,10 +27,15 @@ public class ShipAI : MonoBehaviour
         {
             RightClick();
             SelectionMgr.inst.selectedEntity.moveToTarget = true;
-            MovePos(SelectionMgr.inst.selectedEntity.targetLocation);
+            
 
         }
-       
+
+
+        if (SelectionMgr.inst.selectedEntity.moveToTarget)
+        {
+            MovePos(SelectionMgr.inst.selectedEntity.targetLocation);
+        }
     }
 
 
